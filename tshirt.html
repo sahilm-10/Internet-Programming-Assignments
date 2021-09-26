@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #container{
+            background: #E3C16F;
+        }
+        .shirt-container{
+            width: 50%;
+            /* margin: 0 auto; */
+            background: #946846;
+            display: flex;
+        }
+        .center-items{
+            margin: 0 auto;
+        }
+         .sub-head{
+            font-size: 2em;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .price-container{
+            background-color: #FAFF70;
+            width: 50%;
+            padding: 10px;
+        }
+        .col-6{
+            width: 25%;
+        }
+        .btn-design{
+            width: 100%;
+            padding: 10px;
+        }
+        .btn-design:hover{
+            color: black;
+            cursor: pointer;
+            background: #BAAB68;
+        }
+        .img-responsive{
+            padding: 30px;
+        }
+        
+    </style>
+    <title>Assignment 1.2</title>
+</head>
+<body id="container">
+    <form action="">
+    <div class="shirt-container center-items">
+        <img src="tshirt_img.jpg" alt="This is a Tshirt Image" height="400px" class="img-responsive center-items" >
+    </div>
+    <p class="sub-head text-center"><em> White Casual Sustainable TShirt</em></p>
+    <div class="price-container center-items text-center">
+    <div class="price">
+        <p><strong>Rs.700</strong>&nbsp;&nbsp;<strike>Rs.950</strike></p>
+    </div>
+    <div class="custom-text">
+        <label for ="custom-text">Enter Customized Text:</label>&nbsp;<input type="text" name="tagline-text" required>
+    </div>
+    &nbsp;
+    <div>
+        <label for="color">Color</label>
+        <input type="color" id="color">
+    </div>
+    &nbsp;
+    <div class="size-range">
+        <p><strong> Select Size: </strong></p>
+        <input type="radio" id="small" name="small-size" value="small">
+        <label for="html">Small</label><br>
+        <input type="radio" id="medium" name="medium-size" value="medium">
+        <label for="css">Medium</label><br>
+        <input type="radio" id="large" name="large-size" value="large">
+        <label for="javascript">Large</label>
+    </div>
+    &nbsp;
+    <div class="size">
+        <label for="number">Enter Quantity:</label>
+        <input type="number" min="1" max="20" step="1">
+    </div>
+    &nbsp;
+    &nbsp;
+    <p><strong><u> Delivery Options:</u> <strong></p>
+    &nbsp;
+    <div class="pincode">
+        Enter Pincode: <input type="number" name="pin" id="pincode" required placeholder="Eg.400604">
+    </div>
+    &nbsp;
+    &nbsp;
+    <div class="address ">
+    Enter Address: <textarea name="address" class="col-6" id="add" cols="70" rows="6" placeholder="Type Your Address Here"></textarea>
+    </div>
+    &nbsp;    
+    <div class="date-user">
+        <label for="date">Select a Date :</label>
+        <input type="date" id="date" min="2021-05-25" max="2021-06-05">   
+    </div>
+    &nbsp;
+    &nbsp;
+    <div class="submit-btn">
+        <input type="submit" value="Click to Place Order" class="btn-design">
+    </div>
+</div>
+</form>
+</body>
+</html>
