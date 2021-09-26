@@ -4,14 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #container{
+            background: #E3C16F;
+        }
+        .shirt-container{
+            width: 50%;
+            /* margin: 0 auto; */
+            background: #946846;
+            display: flex;
+        }
+        .center-items{
+            margin: 0 auto;
+        }
+         .sub-head{
+            font-size: 2em;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .price-container{
+            background-color: #FAFF70;
+            width: 50%;
+            padding: 10px;
+        }
+        .col-6{
+            width: 25%;
+        }
+        .btn-design{
+            width: 100%;
+            padding: 10px;
+        }
+        .btn-design:hover{
+            color: black;
+            cursor: pointer;
+            background: #BAAB68;
+        }
+        .img-responsive{
+            padding: 30px;
+        }
+        
+    </style>
     <title>Assignment 1.2</title>
 </head>
-<body>
+<body id="container">
     <form action="">
-    <div class="container">
-        <img src="tshirt_img.jpg" alt="This is a Tshirt Image" height="400px">
+    <div class="shirt-container center-items">
+        <img src="tshirt_img.jpg" alt="This is a Tshirt Image" height="400px" class="img-responsive center-items" >
     </div>
-    <p><em> White Casual Sustainable TShirt</em></p>
+    <p class="sub-head text-center"><em> White Casual Sustainable TShirt</em></p>
+    <div class="price-container center-items text-center">
     <div class="price">
         <p><strong>Rs.700</strong>&nbsp;&nbsp;<strike>Rs.950</strike></p>
     </div>
@@ -47,8 +89,8 @@
     </div>
     &nbsp;
     &nbsp;
-    <div class="address">
-    Enter Address: <textarea name="address" id="add" cols="30" rows="4" placeholder="Type Your Address Here"></textarea>
+    <div class="address ">
+    Enter Address: <textarea name="address" class="col-6" id="add" cols="70" rows="6" placeholder="Type Your Address Here"></textarea>
     </div>
     &nbsp;    
     <div class="date-user">
@@ -58,8 +100,9 @@
     &nbsp;
     &nbsp;
     <div class="submit-btn">
-        <input type="submit" value="Click to Place Order">
+        <input type="submit" value="Click to Place Order" class="btn-design">
     </div>
+</div>
 </form>
 </body>
 </html>
