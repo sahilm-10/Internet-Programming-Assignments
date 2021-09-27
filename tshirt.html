@@ -1,6 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="index.css">
+<title>Exp-1.2</title>
+</head>
+
+<body>
+ 
+   <center><h1>Amazon2 </h1></center>
+<center>
+
+
+<img src="white shirt.jpg" alt="Loading up image" height="400px">
+
+  <div>
+    <p><em>Black Shirt (Limited Edition) </em></p></div>
+<div class="price">
+<p> <b> Discounted Price </b> <b>10$ </b>&nbsp;&nbsp;<b> Original Price <strike>$20 </strike></p> </b>
+
+  </div>
+<img src="black-hoodie.jpg" alt="Please wait" height="400px">
+
+
+  <div><p><em> Black Hoodie </em></p></div>
+<div class="price">
+<p><b>Discounted Price </b><b>$15</b>&nbsp;&nbsp;<b>Original Price </b><strike>$20</strike></p>
+</div>
+
+<div class="custom-text">
+  <form name="form1" action="#"> 
+<label for ="custom-text">Enter Customized Text:</label>&nbsp;<input type="text"
+name="tagline-text" required>
+</div>
+&nbsp;
+<div>
+<label for="color">Color</label>
+<input type="color" id="color">
+</div>
+&nbsp;
+<div class="size">
+<label for="number">Enter Quantity:</label>
+<input type="number" min="1" max="20" step="1">
+</div>
+
+<div class="size-range">
+<p><strong> Select Size: </strong></p>
+<input type="radio" id="small" name="small-size" value="S">
+<label for="html">S</label><br>
+<input type="radio" id="medium" name="medium-size" value="M">
+<label for="css">M</label><br>
+<input type="radio" id="large" name="large-size" value="L">
+<label for="javascript">L</label><br>
+<input type="radio" id="extra-large" name="extra-size" value="XL">
+<label for="css">XL</label><br>
+
+<input type="radio" id="eextra-large" name="eextra-size" value="XLL">
+<label for="javascript">XLL</label>
+</div>
+&nbsp;
+&nbsp;
+  <div>
+    <p><strong><u> Delivery Options:</u></strong></p></div>
+&nbsp;
+<div>
+Enter Address: <textarea name="address" id="address" cols="30" rows="4"
+placeholder="Enter Your Address Here"></textarea>
+</div>
+&nbsp;
+&nbsp;
+<div>
+Enter Number: <input type="number" name="number" id="number" placeholder="Enter 10 digit number">
+  </div>
+&nbsp;
+<div class="date-user">
+<label for="date">Select a Date :</label>
+<input type="date" id="date" name="date" min="2021-05-25" max="2021-06-05">
+</div>
+&nbsp;
+&nbsp;
+
+  <li class="submit"><input type="submit" name="submit" value="Submit"  onclick="validate(document.form1.number,document.form1.address)" /></li>
+
+
+
+ 
+</div>
+</form></center>
+  <script src="index.js">
+
+
+</script>
+</body>
+
+
+  </div>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,9 +147,9 @@
     <title>Assignment 1.2</title>
 </head>
 <body id="container">
-    <form action="">
+    <form action="" class = >
     <div class="shirt-container center-items">
-        <img src="tshirt_img.jpg" alt="This is a Tshirt Image" height="400px" class="img-responsive center-items" >
+        <img src="white shirt.jpg" alt="This is a Tshirt Image" height="400px" class="img-responsive center-items" >
     </div>
     <p class="sub-head text-center"><em> White Casual Sustainable TShirt</em></p>
     <div class="price-container center-items text-center">
@@ -92,6 +191,12 @@
     <div class="address ">
     Enter Address: <textarea name="address" class="col-6" id="add" cols="70" rows="6" placeholder="Type Your Address Here"></textarea>
     </div>
+    &nbsp;
+  &nbsp;
+  <div>
+Enter Number: <input type="number" name="number" id="number" placeholder="Enter 10 digit number">
+  </div>
+&nbsp;
     &nbsp;    
     <div class="date-user">
         <label for="date">Select a Date :</label>
@@ -100,9 +205,10 @@
     &nbsp;
     &nbsp;
     <div class="submit-btn">
-        <input type="submit" value="Click to Place Order" class="btn-design">
+        <input type="submit" value="Click to Place Order" class="btn-design" onclick="validate(document.form1.number,document.form1.address)">
     </div>
 </div>
 </form>
+<script src="index.js">
 </body>
-</html>
+</html> -->
