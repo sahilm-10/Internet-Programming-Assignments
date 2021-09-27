@@ -1,25 +1,40 @@
-function validate(number,address)
-{
-   var regEx = /^\d{10}$/;
-   var  nullvalue =/^$|\s+/;
-   if(!number.value.match(regEx))
-     {
-      alert("Please enter valid phone number!");
-     return false;
-     }
-    else if(address.value.match(nullvalue)) {
-       alert("Please enter address! ");
-       return false;
-       
-       }
-   else {
-      alert("Form submitted"+address.value);
-      }
+function Error() {
+	
+    var value = document.getElementById("Error").value;
+    console.log(value);
 
-    if(address===null || address==" "){
+    if (isNaN(value) || value == 0) {
+		message.innerHTML = "Input Invalid";
+        throw new Error("Invalid Input");
+    } 
+    else {
+        console.log("Valid Input");
+    }
+}
 
-     alert("Please enter address before placing order!");
-      return false;
-     }
-    
-}  
+
+const student1 = {
+    name: "Hirthik Pamnani",
+    className: "D15A",
+    rollNo: 51,
+};
+
+console.log("Student 1: ", student1);
+
+class Student {
+    constructor(uname, className, rollNo) {
+        this.uname = uname;
+        this.className = className;
+        this.rollNo = rollNo;
+    }
+}
+
+const student2 = new Student("Hirthik Pamnani", "D15A", 51);
+console.log("Student 2: ", student2);
+
+Student.prototype.college = "VESIT";
+console.log("Student 2: ", student2);
+
+document.getElementById("printName").innerHTML = student2.uname;
+document.getElementById("printClass").innerHTML = student2.className;
+document.getElementById("printRoll").innerHTML = student2.rollNo;
